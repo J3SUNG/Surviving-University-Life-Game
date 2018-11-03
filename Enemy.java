@@ -24,35 +24,48 @@ public class Enemy {
 
     //추가 작성
     protected double hp;
+    protected int damage;
+    private boolean alive;
     
 //생성자
     public Enemy(int x, int y, float delta_x, float delta_y, int max_x, int max_y, float delta_y_inc) {
-        x_pos = x;
-        y_pos = y;
-        this.delta_x = delta_x;
-        this.delta_y = delta_y;
-        this.max_x = max_x;
-        this.max_y = max_y;
-        this.delta_y_inc = delta_y_inc;
+        x_pos = x;                          // x 좌표
+        y_pos = y;                          // y 좌표
+        this.delta_x = delta_x;             // 좌우 이동 속도
+        this.delta_y = delta_y;             // 상하 이동 속도
+        this.max_x = max_x;                 // 가장 오른쪽
+        this.max_y = max_y;                 // 가장 위쪽
+        this.delta_y_inc = delta_y_inc;     // 가속도
         hp = 5;         //임시 hp 5 현재 player 무기 데미지1
+        damage = 1;     //데미지
+        alive = true;   //생존여부
     }
 
     //enemy 이동 메소드
-    public void move() {
+    public boolean move() {
         x_pos += delta_x;
         y_pos += delta_y;
 
         if (x_pos < 0) {
-            x_pos = 0;
-            delta_x = -delta_x;
-        } else if (x_pos > max_x) {
-            x_pos = max_x;
-            delta_x = -delta_x;
-        }
+            return false;
+        //    delta_x = -delta_x;
+        } 
+        //    else if (x_pos > max_x) {
+        //    x_pos = max_x;
+        //    delta_x = -delta_x;
+        //}
         if (y_pos > max_y) {
-            y_pos = 0;
-            delta_y += delta_y_inc;
+            y_pos = max_y;
+            delta_y = -delta_y;
+            //y_pos = 0;
+            //delta_y += delta_y_inc; // 가속도 삭제
         }
+        else if (y_pos < 0) {
+            y_pos = 0;
+            delta_y = -delta_y;
+        }
+        
+        return true;
     }
     
     //hp 감소(value = 피해 데미지)
@@ -101,7 +114,6 @@ public class Enemy {
                     return true;    //enemy가 shot과 충돌함
                 }
             }
-        
         }
         return false;   //enemy가 shot과 충돌하지 않음
     }
