@@ -7,7 +7,8 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
-
+import java.util.Timer;
+import java.util.TimerTask;
 
 
 public class Shootingspaceship extends JPanel implements Runnable {
@@ -23,12 +24,12 @@ public class Shootingspaceship extends JPanel implements Runnable {
     private final int playerDownSpeed = 2;
     private final int width = 1200;
     private final int height = 900;
-    private final int playerMargin = 10;
+    private final int playerMargin = 5;
     private final int enemyMaxDownSpeed = 1;
     private final int enemyMaxHorizonSpeed = 1;
-    private final int enemyTimeGap = 2000; //unit: msec
-    private final float enemyDownSpeedInc = 0.3f;
-    private final int maxEnemySize = 100;
+    private final int enemyTimeGap = 1000; //unit: msec
+    private final float enemyDownSpeedInc = 100.3f;
+    private final int maxEnemySize = 1000;
     private int enemySize;
     private javax.swing.Timer timer;    //enemy 자동 생성을 위한 timer
     private boolean playerMoveLeft; 
@@ -42,7 +43,7 @@ public class Shootingspaceship extends JPanel implements Runnable {
 
     private javax.swing.Timer autoAttackTimer;  //자동 공격 간격 타이머
     public Weapon[] weapon = new Weapon[100];
-
+    Timer eTimer = new Timer();
     
     public Shootingspaceship() {
         setBackground(Color.black);
@@ -78,17 +79,30 @@ public class Shootingspaceship extends JPanel implements Runnable {
                     downspeed = rand.nextFloat() * enemyMaxDownSpeed;
                 } while (downspeed == 0);
 
-                float horspeed = rand.nextFloat() * 2 * enemyMaxHorizonSpeed - enemyMaxHorizonSpeed;
+                float horspeed = rand.nextFloat()- enemyMaxHorizonSpeed;
                 //System.out.println("enemySize=" + enemySize + " downspeed=" + downspeed + " horspeed=" + horspeed);
-
-                Enemy newEnemy = new Enemy((int) (rand.nextFloat() * width), 0, horspeed, downspeed, width, height, enemyDownSpeedInc);
+                int height1 = (int) (rand.nextFloat() * width);
+                Enemy newEnemy = new Enemy(width, height1 % (height-250), horspeed, downspeed, width, height, enemyDownSpeedInc); // 적 유닛 기본 설정
                 enemies.add(newEnemy);
+                
+                Enemy newEnemy1 = new Enemy(width, (int)(height1 % (height-250) +50), horspeed, downspeed, width, height, enemyDownSpeedInc); // 적 유닛 기본 설정
+                enemies.add(newEnemy1);
+                
+                Enemy newEnemy2 = new Enemy(width, (int)(height1 % (height-250) +100), horspeed, downspeed, width, height, enemyDownSpeedInc); // 적 유닛 기본 설정
+                enemies.add(newEnemy2);
+                
+                Enemy newEnemy3 = new Enemy(width, (int)(height1 % (height-250) +150), horspeed, downspeed, width, height, enemyDownSpeedInc); // 적 유닛 기본 설정
+                enemies.add(newEnemy3);
+                
+                Enemy newEnemy4 = new Enemy(width, (int)(height1 % (height-250) +200), horspeed, downspeed, width, height, enemyDownSpeedInc); // 적 유닛 기본 설정
+                enemies.add(newEnemy4);
+                //enemies.add(newEnemy1);
             } else {
                 timer.stop();
             }
         }
     }
-
+    
     //자동 공격
     private class autoAttack implements ActionListener {
         public void actionPerformed(ActionEvent e) {
@@ -210,6 +224,9 @@ public class Shootingspaceship extends JPanel implements Runnable {
             while (enemyList.hasNext()) {
                 Enemy enemy = (Enemy) enemyList.next();
                 enemy.move();
+                if(!enemy.move()){
+                    enemyList.remove();
+                }
             }
 
             repaint();
@@ -250,13 +267,13 @@ public class Shootingspaceship extends JPanel implements Runnable {
         while (enemyList.hasNext()) {
             Enemy enemy = (Enemy) enemyList.next();
             enemy.draw(g);
-            if (enemy.isCollidedWithShot(shots)) {
+            if (enemy.isCollidedWithShot(shots)) { // 에너미 체력 0이하 사망
                 if( enemy.getHp()<= 0)
                     enemyList.remove();
                 //enemy.HpDecrease(shots);
                     //enemyList.remove();
             }
-            if (enemy.isCollidedWithPlayer(player)) {
+            if (enemy.isCollidedWithPlayer(player)) { // 부딪히면 게임끝
                 enemyList.remove();
                 System.exit(0);
             }
