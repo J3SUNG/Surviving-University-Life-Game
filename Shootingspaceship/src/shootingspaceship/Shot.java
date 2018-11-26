@@ -54,9 +54,8 @@ public class Shot {
     {
         this(x,y,damage);
         this.target = target;       //타겟 설정
-        slope = (y - target.getY()) / (x-target.getX());    //기울기 설정
-        
-}
+        slope = (y - target.getY()) / (x-target.getX());    //기울기 설정    
+    }
     
     //shot y좌표
     public double getY() {

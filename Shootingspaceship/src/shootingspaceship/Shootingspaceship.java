@@ -15,7 +15,8 @@ public class Shootingspaceship extends JPanel implements Runnable {
 
     private Thread th;
     private Player player;
-    private Shot[] shots;
+    private Shot[] shots;                   //player 공격
+    private Shot[] enemyShots;              //enemy 공격
     private ArrayList enemies;
     private final int shotSpeed = 3;        //공격의 이동 속도
     private final int playerLeftSpeed = -2; //플레이어 이동 속도
@@ -50,7 +51,8 @@ public class Shootingspaceship extends JPanel implements Runnable {
         setBackground(Color.black);
         setPreferredSize(new Dimension(width, height));
         player = new Player(width / 2, (int) (height * 0.9), playerMargin, width-playerMargin, 20, height-20 );
-        shots = new Shot[ maxShotNum ];
+        shots = new Shot[ maxShotNum ];         //player 공격
+        enemyShots = new Shot[maxShotNum];      //enemy 공격
         enemies = new ArrayList();
         enemySize = 0;
         rand = new Random(1);
@@ -74,7 +76,7 @@ public class Shootingspaceship extends JPanel implements Runnable {
     private class addANewEnemy implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            if (++enemySize <= maxEnemySize) {
+            if (enemySize <= maxEnemySize) {
                 float downspeed;
                 do {
                     downspeed = rand.nextFloat() * enemyMaxDownSpeed;
@@ -83,21 +85,14 @@ public class Shootingspaceship extends JPanel implements Runnable {
                 float horspeed = rand.nextFloat()- enemyMaxHorizonSpeed;
                 //System.out.println("enemySize=" + enemySize + " downspeed=" + downspeed + " horspeed=" + horspeed);
                 int height1 = (int) (rand.nextFloat() * width);
-                Enemy newEnemy = new Enemy(width, height1 % (height-250), horspeed, downspeed, width, height, enemyDownSpeedInc); // 적 유닛 기본 설정
-                enemies.add(newEnemy);
-                
-                Enemy newEnemy1 = new Enemy(width, (int)(height1 % (height-250) +50), horspeed, downspeed, width, height, enemyDownSpeedInc); // 적 유닛 기본 설정
-                enemies.add(newEnemy1);
-                
-                Enemy newEnemy2 = new Enemy(width, (int)(height1 % (height-250) +100), horspeed, downspeed, width, height, enemyDownSpeedInc); // 적 유닛 기본 설정
-                enemies.add(newEnemy2);
-                
-                Enemy newEnemy3 = new Enemy(width, (int)(height1 % (height-250) +150), horspeed, downspeed, width, height, enemyDownSpeedInc); // 적 유닛 기본 설정
-                enemies.add(newEnemy3);
-                
-                Enemy newEnemy4 = new Enemy(width, (int)(height1 % (height-250) +200), horspeed, downspeed, width, height, enemyDownSpeedInc); // 적 유닛 기본 설정
-                enemies.add(newEnemy4);
-                //enemies.add(newEnemy1);
+
+                Enemy newEnemy;
+                for(int i=0; i<5; ++i)
+                {
+                    newEnemy = new Enemy(width, (int)(height1 % (height-250)+(50*i)), horspeed, downspeed, width, height, enemyDownSpeedInc);
+                    enemies.add(newEnemy);
+                    ++enemySize;
+                }
             } else {
                 timer.stop();
             }
@@ -113,6 +108,32 @@ public class Shootingspaceship extends JPanel implements Runnable {
                 break;
                 }
             }
+            if(enemies.size()>1) //적이 있을 때
+            {
+                Enemy[] enemy111 = new Enemy[2];
+                int c=0;
+                enemy111[0] = (Enemy)enemies.get(0);
+                enemy111[1] = (Enemy)enemies.get(1);
+                for(int i=0; i<enemyShots.length; ++i)
+                {
+                    if (enemyShots[i] == null) {
+                        switch(c++)
+                        {
+                            case 0:
+                                enemyShots[i] = enemy111[0].generateShot();
+                                break;
+                            case 1:
+                                enemyShots[i] = enemy111[1].generateShot();
+                                break;
+                        }
+                        if(c>1)
+                            break;
+                            //c=0;
+                    
+                    }
+                }
+            }
+            
         }
     }
     //플레이어 조작키
@@ -202,7 +223,22 @@ public class Shootingspaceship extends JPanel implements Runnable {
                     }
                     break;
                 case KeyEvent.VK_E:
-
+                    int z=0;
+                    while(z<7)
+                    {
+                        for(int i=0; i<shots.length; ++i)
+                        {
+                            if(shots[i] == null)
+                            {
+                                shots[i] = player.generateShot(-0.3+(z*0.1));
+                                break;
+                            }
+                        }
+                        ++z;
+                    }
+                    break;
+                case KeyEvent.VK_R:
+                    player.barrierSwitch();
                     break;
             }
         }
@@ -234,11 +270,12 @@ public class Shootingspaceship extends JPanel implements Runnable {
         while (true) {
             //System.out.println( ++c );
             // do operations on shots in shots array
-            for (int i = 0; i < shots.length; i++) {
+            for (int i = 0; i < shots.length; i++) 
+            {
                 if (shots[i] != null) {
                     // move shot
                     shots[i].moveShot(shotSpeed);       //무브 샷
-
+                
                     // test if shot is out
 
                     
@@ -246,6 +283,18 @@ public class Shootingspaceship extends JPanel implements Runnable {
                     if (shots[i].getX() > width || shots[i].getY() > height || shots[i].getX() < 0  || shots[i].getY() < 0) {
                         // remove shot from array
                         shots[i] = null;
+                    }
+                }
+                
+            }
+            for (int i = 0; i < enemyShots.length; i++) 
+            {
+                if(enemyShots[i] != null)
+                {
+                    enemyShots[i].moveShot(-shotSpeed);
+                    if (enemyShots[i].getX() > width || enemyShots[i].getY() > height || enemyShots[i].getX() < 0  || enemyShots[i].getY() < 0) {
+                        // remove shot from array
+                        enemyShots[i] = null;
                     }
                 }
             }
@@ -333,6 +382,15 @@ public class Shootingspaceship extends JPanel implements Runnable {
                     System.exit(0);         //프로그램 종료
             }
         }
+        if(player.isCollidedWithShot(enemyShots))
+        {
+            if(player.getHp()<=0)
+            {
+                System.out.println("player 체력 0");
+                System.exit(0);
+            }
+            System.out.println("enemy의 총알 맞음 Hp : "+player.getHp());
+        }
         
         for(int i=0; i<shots.length; i++)
         {
@@ -345,6 +403,12 @@ public class Shootingspaceship extends JPanel implements Runnable {
                 shots[i].drawShot(g);
             }
         }
+        for (int i = 0; i < enemyShots.length; i++) {
+            if (enemyShots[i] != null) {
+                enemyShots[i].drawShot(g);
+            }
+        }
+        
     }
     
     //무기 생성 : file을 읽어서 저장된 내용을 통해 객체 생성

@@ -83,6 +83,12 @@ public class Enemy {
         return y_pos;
     }
 
+    public Shot generateShot() {
+        //Shot shot = new Shot(x_pos, y_pos); //현재 player의 위치(x,y)에서 공격 시작
+        //기본공격 생성 x,y에 기본데미지
+        Shot shot = new Shot((int)x_pos, (int)y_pos, damage);
+        return shot;
+    }
     //반환형 bool , 플레이어 공격과 충돌 하였는지 확인( 매개변수 shots 는 player의 shots 배열)
     public boolean isCollidedWithShot(Shot[] shots) {
         //기존 소스내용에서

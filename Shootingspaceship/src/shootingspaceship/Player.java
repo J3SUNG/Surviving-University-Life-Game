@@ -30,8 +30,10 @@ public class Player {
     private int level =1;       //레벨
     private int attackType = 1; //미구현 : 공격 타입 1 = 일반 공격 한발씩, 공격 타입 2 = 두발 공격
     
+    private boolean barrier;
+    private double barrierHp;
     public double skill[] = new double[4];    //qwer 이나 asdf 스킬 사용 할 예정
-    
+    int collision_distance = 10;
     
     
     //Player 생성자
@@ -42,7 +44,9 @@ public class Player {
         this.max_x = max_x;
         this.min_y = min_y;
         this.max_y = max_y;
-        attackSpeed = 5; //공격속도
+        attackSpeed = 5;    //공격속도
+        barrier = false;    //배리어 여부 x
+        barrierHp = 5;      //기본 배리어 체력 0
     }
     
     //Player 생성자 x,y 생성좌표,   min max xy 이동 최대 범위,  hp 체력, damage 데미지
@@ -123,7 +127,23 @@ public class Player {
     
     //hp 감소(value = 피해 데미지)
     public void decreaseHp(double value){
-        hp-=value;
+        if(barrier && barrierHp>0)//배리어 on 이면서 배리어 체력이 0 이상일 때
+        {
+            barrierHp-=value;
+            System.out.print("현재 barrierHp : "+barrierHp);
+            if(barrierHp<0) //만약 배리어 체력이 0보다 작으면 그 값 만큼 hp 에 대미지
+                hp+=barrierHp;  
+        }
+        else
+            hp-=value;
+        System.out.println("  현재 HP : "+hp);
+    }
+    public void barrierSwitch()
+    {
+        if(barrier)
+            barrier = false;
+        else
+            barrier = true;
     }
 
     //공격 생성, 반환형 Shot 객체
@@ -159,6 +179,34 @@ public class Player {
                 
          
         return shot;
+    }
+ 
+    //반환형 bool , enemy 공격과 충돌 하였는지 확인( 매개변수 shots 는 enemy의 enemyShots 배열)
+    public boolean isCollidedWithShot(Shot[] shots) {
+        //기존 소스내용에서
+        //기본 for문 형태로 변경        
+        //이유 : Shot 클래스의 객체가 가르키는 곳을 미리 null로 해주지 않으면
+        //잠깐 동안 프로그램이 여러번 반복동작 하여
+        //hp가 중복해서 깍임
+        for(int i=0; i<shots.length; i++)
+        {
+            if(shots[i] == null){
+                continue;
+            }
+           if (-collision_distance <= (y_pos - shots[i].getY()) && (y_pos - shots[i].getY() <= collision_distance)) {
+                if (-collision_distance <= (x_pos - shots[i].getX()) && (x_pos - shots[i].getX() <= collision_distance)) {
+                    //collided.
+                    shots[i].collided();
+                    
+                    //hp-=shots[i].getDamage();//hp 감소
+                    decreaseHp(shots[i].getDamage());
+                    shots[i] = null;        //해주지 않으면 살아있는 동안 hp 감소 여러번 반복
+                    return true;    //enemy가 shot과 충돌함
+                }
+            }
+        
+        }
+        return false;   //enemy가 shot과 충돌하지 않음
     }
 
     //플레이어 그리기 현재 > 모양으로 생겼음
