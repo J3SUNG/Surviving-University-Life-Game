@@ -52,19 +52,20 @@ Tool : NetBeans
 
 - 플레이 화면 2
 
-  ![play2](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/d2beac04-ab39-464a-9455-2feeb9c4d898)
-  <br/><br/>
+![play2](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/d2beac04-ab39-464a-9455-2feeb9c4d898)
+<br/><br/>
 
 ### 스테이지
 
 - 시나리오
 
-  ![stage](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/8582130a-da67-41f9-9290-0e619a4baf95)
+![stage](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/8582130a-da67-41f9-9290-0e619a4baf95)
 
 <br/><br/>
 
 - 스테이지 1
-  ![stage1](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/60764c73-084b-4208-977c-ca704cbf7020)
+
+![stage1](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/60764c73-084b-4208-977c-ca704cbf7020)
 
 <br/><br/>
 
@@ -95,19 +96,49 @@ Tool : NetBeans
 <br/><br/>
 
 - 캐릭터 무기 선택 화면
-  ![major2](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/9fe5af51-e1e9-43ca-9676-265cd42763be)
+
+![major2](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/9fe5af51-e1e9-43ca-9676-265cd42763be)
+<br/><br/>
 
 #### 캐릭터 스킬
 
-- 캐릭터 스킬
+- 스킬 : 메테오
 
 ![skill1](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/8e04a7e4-3d50-413b-8e01-f9a2f4180093)
+<br/>
+
+- 스킬 : 유도탄
+
 ![skill2](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/b918af41-0852-4376-bf67-7da4b73357f6)
+<br/>
+
+- 스킬 : 샷건
+
 ![skill3](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/ac0060a5-2335-480a-9296-c4b201897e79)
+<br/>
+
+- 스킬 : 슈퍼 메테오
+
 ![skill4](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/9b906946-af0a-450a-af8f-d260132d0ca1)
+<br/>
+
+- 스킬 : 공격 업
+
 ![skill5](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/80dff5c9-90e5-40ef-858d-3c408f47a90b)
+<br/>
+
+- 스킬 : 공격 속도 업
+
 ![skill6](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/0565a709-306c-4e91-8aa9-b8b3ee90e88b)
+<br/>
+
+- 스킬 : 파이어 하프 링
+
 ![skill7](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/7a8a4cbe-0605-43f2-92dd-e7ae967ccfc7)
+<br/>
+
+- 스킬 : 인페르노
+
 ![skill8](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/2baf3f4f-65e5-496c-b665-e385e8fa12a9)
 <br/><br/>
 
@@ -116,28 +147,51 @@ Tool : NetBeans
 #### 스테이지 별 몬스터
 
 - 스테이지 1 몬스터
-  ![stage1_enemy](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/2ab81022-da8f-44cc-8a15-bbe268c44b1e)
+
+![stage1_enemy](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/2ab81022-da8f-44cc-8a15-bbe268c44b1e)
+<br/>
+
 - 스테이지 2 몬스터
-  ![stage2_enemy](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/69fed9d5-5536-4fdf-80ef-ccf94d8112ce)
+
+![stage2_enemy](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/69fed9d5-5536-4fdf-80ef-ccf94d8112ce)
+<br/>
+
 - 스테이지 3 몬스터
-  ![stage3_enemy](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/a2b0e67a-f0d3-4081-9d35-f3e8b797b862)
-  <br/><br/>
+
+![stage3_enemy](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/a2b0e67a-f0d3-4081-9d35-f3e8b797b862)
+<br/><br/>
 
 #### 몬스터 정보
 
 - 몬스터 1 정보
-  ![enemy1](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/f878ea4c-e57a-4dad-8e62-cf828214d2da)
+
+![enemy1](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/f878ea4c-e57a-4dad-8e62-cf828214d2da)
+<br/>
+
 - 몬스터 2 정보
-  ![enemy2](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/ac957fcc-878d-4186-b9c0-309de318adb5)
+
+![enemy2](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/ac957fcc-878d-4186-b9c0-309de318adb5)
+<br/>
+
 - 몬스터 3 정보
-  ![enemy3](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/4001a270-4d80-4883-bdaa-30a5c00af5dd)
+
+![enemy3](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/4001a270-4d80-4883-bdaa-30a5c00af5dd)
+<br/>
+
 - 중간 보스 정보
-  ![enemy4](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/011ce0d6-022b-46fe-b6ec-529e73e339ef)
+
+![enemy4](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/011ce0d6-022b-46fe-b6ec-529e73e339ef)
+<br/>
+
 - 보스 정보
-  ![enemy5](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/1eb70b6c-3d52-4a76-a126-9dea64c8a272)
+
+![enemy5](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/1eb70b6c-3d52-4a76-a126-9dea64c8a272)
+<br/>
+
 - 보스 패턴 정보
-  ![boss_pattern](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/a9eb5fe1-805b-4c05-9248-6a85a7ef25a3)
-  <br/><br/>
+
+![boss_pattern](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/a9eb5fe1-805b-4c05-9248-6a85a7ef25a3)
+<br/><br/>
 
 ### 밸런스
 
