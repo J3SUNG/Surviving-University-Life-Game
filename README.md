@@ -49,6 +49,7 @@ Tool : NetBeans
 - 플레이 화면 1
 
 ![play1](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/ea5b38e1-56fb-4fec-a357-0db2c6f63e26)
+<br/>
 
 - 플레이 화면 2
 
@@ -60,20 +61,17 @@ Tool : NetBeans
 - 시나리오
 
 ![stage](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/8582130a-da67-41f9-9290-0e619a4baf95)
-
-<br/><br/>
+<br/>
 
 - 스테이지 1
 
 ![stage1](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/60764c73-084b-4208-977c-ca704cbf7020)
-
-<br/><br/>
+<br/>
 
 - 스테이지 2
 
 ![stage2](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/d5d136a1-1993-435a-8ebb-4194a86bfe0d)
-
-<br/><br/>
+<br/>
 
 - 스테이지 3
 
@@ -93,7 +91,7 @@ Tool : NetBeans
 - 캐릭터 무기 정보
 
 ![major](https://github.com/J3SUNG/Surviving-University-Life-Game/assets/16315673/00fcdc90-748b-4731-ac97-84cf5aae7bc7)
-<br/><br/>
+<br/>
 
 - 캐릭터 무기 선택 화면
 
