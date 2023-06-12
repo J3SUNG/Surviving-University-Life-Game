@@ -1,4 +1,4 @@
-Spring:2.00:4.00
-Summer:4.00:3.00
-Fall:8.00:2.00
-Winter:16.00:1.00
+Spring:3.00:4.00:.\\src\\image\\weapon\\weapon0.png:.\\src\\image\\weapon\\weaponDamageUp0.png:
+Summer:4.00:3.25:.\\src\\image\\weapon\\weapon1.png:.\\src\\image\\weapon\\weaponDamageUp1.png:
+Fall:6.00:2.50:.\\src\\image\\weapon\\weapon2.png:.\\src\\image\\weapon\\weaponDamageUp2.png:
+Winter:8.00:2.00:.\\src\\image\\weapon\\weapon3.png:.\\src\\image\\weapon\\weaponDamageUp3.png:

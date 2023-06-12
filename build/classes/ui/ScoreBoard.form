@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="alwaysOnTop" type="boolean" value="true"/>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="66" green="ff" red="ff" type="rgb"/>
+    </Property>
+    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[700, 600]"/>
+    </Property>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="playerName" pref="129" max="32767" attributes="0"/>
+                  <Component id="playerScore" alignment="0" max="32767" attributes="0"/>
+                  <Component id="playerGrade" alignment="0" max="32767" attributes="0"/>
+                  <Component id="playerRank" alignment="0" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="155" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="Rank22" alignment="0" max="32767" attributes="0"/>
+                          <Component id="Rank21" alignment="0" max="32767" attributes="0"/>
+                          <Component id="Rank24" alignment="0" max="32767" attributes="0"/>
+                          <Component id="Rank23" alignment="0" max="32767" attributes="0"/>
+                          <Component id="Rank25" alignment="0" min="-2" pref="18" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Component id="Rank29" alignment="1" min="-2" pref="18" max="-2" attributes="0"/>
+                  <Component id="Rank30" alignment="1" min="-2" pref="18" max="-2" attributes="0"/>
+                  <Component id="Rank27" alignment="1" min="-2" pref="18" max="-2" attributes="0"/>
+                  <Component id="Rank28" alignment="1" min="-2" pref="18" max="-2" attributes="0"/>
+                  <Component id="Rank26" alignment="1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                  <Component id="Name6" min="-2" max="-2" attributes="0"/>
+                  <Component id="Name7" min="-2" max="-2" attributes="0"/>
+                  <Component id="Name8" min="-2" max="-2" attributes="0"/>
+                  <Component id="Name9" min="-2" max="-2" attributes="0"/>
+                  <Component id="Name10" min="-2" max="-2" attributes="0"/>
+                  <Component id="Name1" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="Name2" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="Name3" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="Name4" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="Name5" alignment="1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                  <Component id="Score6" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="Score7" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="Score8" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="Score9" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="Score10" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="Score5" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="Score4" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="Score3" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="Score2" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="Score1" alignment="1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="180" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="jLabel1" min="-2" pref="280" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace pref="61" max="32767" attributes="0"/>
+              <Component id="jLabel1" min="-2" pref="70" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="playerName" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="playerScore" min="-2" pref="25" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="playerGrade" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="playerRank" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="Rank30" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="Rank29" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="Rank27" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="Rank28" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <Component id="Rank21" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                      <Component id="Rank22" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="Rank24" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="Rank23" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="Rank25" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="Rank26" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="Score1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="Score2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="Score3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="Score4" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                          <Component id="Score5" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                          <Component id="Score6" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="Score7" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="Score8" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="Score9" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="Score10" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="Name1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="Name2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="Name3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="Name4" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                          <Component id="Name5" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                          <Component id="Name6" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="Name7" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="Name8" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="Name9" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="Name10" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="Name5">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Name6">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Name8">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Name7">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Name9">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Name10">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Name3">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Name4">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Name2">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Name1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Score5">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Score6">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Score8">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Score7">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Score9">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Score10">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Score3">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Score4">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Score2">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Score1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Rank21">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="5"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Rank22">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="6"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Rank23">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="8"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Rank24">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="7"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Rank25">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="9"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Rank26">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="10"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Rank27">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="3"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Rank28">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="4"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Rank29">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="2"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Rank30">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="1"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/image/UIImage/title.png"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="playerName">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="playerScore">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="playerGrade">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="playerRank">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xb9d1;&#xc740; &#xace0;&#xb515;" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+  </SubComponents>
+</Form>
